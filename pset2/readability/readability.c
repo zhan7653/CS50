@@ -6,6 +6,7 @@ float get_grade(char *s);
 
 int main(void)
 {
+    // get input text
     char *s = get_string("Text:");
     float grade = get_grade(s);
     long grade_round = lroundf(grade);
@@ -23,6 +24,8 @@ int main(void)
     }
 }
 
+
+// compute the grade of text
 float get_grade(char *s)
 {
     int letter = 0;
@@ -39,12 +42,12 @@ float get_grade(char *s)
         {
             sentence++;
         }
-        else if (s[i] == ' ')
+        else if (s[i] == ' ') // each word matchs a ' ' (maybe after punctuation)
         {
             word++;
         }
     }
-    word++;
+    word++; // the last word didn't end with ' '
     
     grade = (5.88 * letter) / word - (29.6 * sentence) / word - 15.8;
     return grade;

@@ -54,3 +54,4 @@ dkms.conf
 # My ignore
 test
 test.c
+.vscode

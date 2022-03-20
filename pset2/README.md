@@ -1,0 +1,4 @@
+Lab2:
+https://cs50.harvard.edu/x/2021/labs/2/  
+Pset2:
+https://cs50.harvard.edu/x/2021/psets/2/  
